@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.subnav:checked + .sublist{
+  display: block;
+}
+
+.lable1:checked~ .list1{
+  display: block;
+}
+
+.lable1:checked + label{
+  background-color: #00a9e0;
+}
+
+.lable2:checked~ .list2{
+  display: block;
+}
+
+.lable2:checked + label{
+  background-color: #00a9e0;
+}
+
+.lable3:checked~ .list3{
+  display: block;
+}
+
+.lable3:checked + label{
+  background-color: #00a9e0;
+}
+
+.lable4:checked~ .list4{
+  display: block;
+}
+
+.lable4:checked + label{
+  background-color: #00a9e0;
+}
