@@ -28,17 +28,29 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes liner{
+  0%{
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    opacity: 1;
   }
 }
 
-.subnav:checked + .sublist{
-  display: block;
+
+
+span{
+  visibility:hidden;
+  opacity:0;
+  transition:visibility 0.3s linear,opacity 0.3s linear;
+}
+
+.sublist {
+  transition: 1s all;
+}
+
+.subnav:checked ~ .sublist{
+  transform: translateY(0);
 }
 
 .lable1:checked~ .list1{

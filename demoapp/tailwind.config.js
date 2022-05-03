@@ -7,7 +7,17 @@ module.exports = {
 
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        linner:"0.5s wiggle"
+      },
+      keyframes: {
+        wiggle: {
+          '0%': { opacity:"0" },
+          '100%': { opacity:"1" },
+        }
+      }
+    },
   },
   plugins: [],
 }
